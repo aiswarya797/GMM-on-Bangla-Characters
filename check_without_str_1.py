@@ -49,7 +49,7 @@ def return_list_for_csv_file(feature_array):   #CSV Format returned.
 	return minimum"""  ## This function was used to find the set with the min number of elements in it.
 
 
-def render_strokes_as_image(allstrokes,box,filename,point_size):
+def render_strokes_as_image(allstrokes,box,filename,point_size):#box deifnes the rectangle which enclosed the word, from where the letter has been cropped. Gives relative postion of letter.
     maxx = int(box[0])    # This box is the dimensions of the box enclosing the word from which this letter came from.
     minx = int(box[1])
     maxy = int(box[2])
